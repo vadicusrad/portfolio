@@ -1,0 +1,82 @@
+.about_me {
+    padding: 120px 0 120px 0;
+
+    &__main {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    
+    &__photo {
+        width: 400px;
+        margin-right: 70px;
+    }
+    &__img {
+        width: 400px;
+        height: 600px;
+    }
+    &__descr {
+        width: 570px;
+    }
+    &__subtitle {
+        position: relative;
+        margin-left: 12px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        @include before_circle;
+        &:before {
+            left: -12px;
+        }
+    }
+    &_title {
+        font-weight: bold;
+        
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        margin-top: 20px;
+    }
+    &__divider {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+    }
+    &__skills {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+    }
+    &__skill {
+        display: flex;
+        width: 260px;
+        height: 120px;
+        margin-left: 15px;
+        &_descr {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &_icon {
+        display: block;
+        position: relative;
+        @include before_circle;
+            &:before {
+               top: -14%;
+               left: -25%;
+            }
+        img {
+            position: relative;
+            display: block;
+            width: 25px;
+            height: 24px;
+            margin-right: 25px;
+            
+        }
+       
+    }
+}
