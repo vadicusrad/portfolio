@@ -1,0 +1,101 @@
+.skills {
+    padding-bottom: 120px;
+    &__header {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 552px;
+        }
+    }
+    &__subheader {
+        text-align: center;
+        margin-top: 20px;
+
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+        margin-top: 60px;
+
+    }
+    &__item {
+        border: solid 1px;
+        // min-height: 270px;
+        // min-width: 270px;
+        padding: 27px;
+        &_img {
+            min-height: 65px;
+        }
+        &_header {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            margin-top: 20px;
+        }
+        &_descr {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+            margin-top: 15px;
+        }
+    }
+    &__wrapper {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px );
+        gap:30px 45px;
+        &_item {
+            width: 350px;
+            height: 70px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        &_header {
+            position: relative;
+            font-weight: bold;
+            font-size: 14px;
+            color: #000000;
+            @include before_circle;
+            &:before {
+                top: -25%;
+                left: 0;
+            }
+            width: 80%;
+            padding-left: 16px;
+           
+        }
+        &_percent {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            width: 20%;
+            text-align: right;
+        }
+        &_scale {
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            margin-top: 20px;
+            
+        }
+        &_lvl {
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
+
+    }
+}
