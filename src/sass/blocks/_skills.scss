@@ -23,6 +23,7 @@
         grid-template-rows: repeat(2, 270px);
         gap: 13px;
         margin-top: 60px;
+        justify-content: center;
 
     }
     &__item {
@@ -58,6 +59,7 @@
         grid-template-columns: repeat(3, 350px);
         grid-template-rows: repeat(2, 70px );
         gap:30px 45px;
+        justify-content: center;
         &_item {
             width: 350px;
             height: 70px;
