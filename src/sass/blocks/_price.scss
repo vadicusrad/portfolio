@@ -5,9 +5,11 @@
     &__header {
         position: relative;
         text-align: center;
+        width: 100px;
+        margin: 0 auto;
         @include before_circle;
         &:before {
-            left: 500px;
+            left: 30px;
         }
     }
     &__subheader {
@@ -22,7 +24,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 366px 366px;
-        grid-template-rows: repeat (3, minmax(45, auto));
+        grid-template-rows: repeat(3, minmax(45, auto));
         justify-content: space-between;
         margin-top: 60px;
         row-gap: 15px;
@@ -30,7 +32,7 @@
     &__item {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat (2, auto);
+        grid-template-rows: repeat(2, auto);
         margin-left: 23px;
         
         &_header {

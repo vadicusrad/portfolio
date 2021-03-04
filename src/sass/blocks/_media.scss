@@ -70,6 +70,33 @@
             
         }
     }
+    .portfolio {
+        padding-bottom: 90px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px );
+            grid-auto-rows: 280px;
+            justify-content: center;
+            .vertical, .horizontal {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .price {
+        &__wrapper {
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+    .contacts {
+        padding-left: 0;
+        padding-right: 0;
+        &__wrapper {
+            grid-template-columns: 300px 520px;
+            justify-content: center;
+            column-gap: 34px;
+        }
+    }
     
 }
 // ====================================================================================================
@@ -131,6 +158,22 @@
             }
         }
         
+    }
+    .price {
+        padding: 0;
+        padding-bottom: 60px;
+        &__wrapper {
+            grid-template-columns: 320px 320px;
+            gap: 25px;
+        }
+    }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: auto;
+        }
     }
 }
 
@@ -215,6 +258,23 @@
             }
         }
     }
+    .price {
+        &__wrapper {
+            grid-template-columns: auto;
+            margin-top: 20px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 510px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/250px 250px;
+        }
+        &__descr {
+            width: 510px;
+        }
+    }
 }
 // ====================================================================================================
 // ====================================================================================================
@@ -285,5 +345,54 @@
             }
         }
     }
+    .contacts {
+        padding-bottom: 50px;
+        &__wrapper {
+            grid-template-columns: 300px;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // margin: 0;
+            padding: 0;
+        }
+        &__input {
+            height: 45px;
+            input {
+                width: 280px;
+            }
+            
+        }
+        &__textarea {
+            height: 150px;
+            textarea {
+                width: 280px;
+                height: 150px;
+            }
+            width: 280px;
+        }
+        &__triggers {
+            width: 300px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            
+        }
+        &__btn {
+            margin-top: 20px;
+        }
+        &__descr {
+            width: 300px;
+            .title_fs36 {
+                font-size: 32px;
+            }
+            .title_fs14 {
+                font-size: 12px;
+            }
+        }
+    }
+    
 
 }
